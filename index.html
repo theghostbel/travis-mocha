@@ -14,6 +14,11 @@
     <script>mocha.setup('bdd')</script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/expect.js/0.2.0/expect.js"></script>
     <script src="test-app.js"></script>
-    <script>if (location.href.indexOf('runTest') !== -1) mocha.run()</script>
+    <script>
+        if (location.href.indexOf('runTest') !== -1)
+            mocha.run()
+        if (window.mochaPhantomJS)
+            mochaPhantomJS.run()
+    </script>
 </body>
 </html>
