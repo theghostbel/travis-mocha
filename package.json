@@ -1,0 +1,14 @@
+{
+    "name": "soligorsk-travis",
+    "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/theghostbel/solit-travis"
+    },
+    "dependencies": {
+        "mocha-phantomjs": ">= 3.3.2"
+    },
+    "scripts" : {
+        "test" : "mocha-phantomjs index.html"
+    }
+}
