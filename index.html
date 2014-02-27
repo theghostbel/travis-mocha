@@ -2,12 +2,18 @@
 <html>
 <head>
     <title>Super Puper Soligorsk Test App</title>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/mocha/1.13.0/mocha.css"/>
     <script src="main.js"></script>
 </head>
 <body>
+    <button onclick="buttonClicked()">Go</button>
+    <input type="text" value="" />
+    <div id="mocha"></div>
 
-<button onclick="buttonClicked()">Go</button>
-<input type="text" value="" />
-
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/mocha/1.13.0/mocha.js"></script>
+    <script>mocha.setup('bdd')</script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/expect.js/0.2.0/expect.js"></script>
+    <script src="test-app.js"></script>
+    <script>if (location.href.indexOf('runTest') !== -1) mocha.run()</script>
 </body>
 </html>
