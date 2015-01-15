@@ -1,3 +1,3 @@
 function buttonClicked() {
-    document.getElementsByTagName('input')[0].value = 'Soligorsk'
+    document.getElementsByTagName('input')[0].value = 'Tallinn'
 }
