@@ -1,6 +1,6 @@
 describe('when user clicks button', function () {
     before(function () {
-        document.getElementsByTagName('button')[1].click()
+        document.getElementsByTagName('button')[0].click()
     })
 
     it('shows welcome text in input', function () {
@@ -8,4 +8,3 @@ describe('when user clicks button', function () {
         expect(inputValue).to.equal('Soligorsk')
     })
 })
-
