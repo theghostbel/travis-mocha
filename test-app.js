@@ -5,6 +5,6 @@ describe('when user clicks button', function () {
 
     it('shows welcome text in input', function () {
         var inputValue = document.getElementsByTagName('input')[0].value
-        expect(inputValue).to.equal('Tallinn-Break')
+        expect(inputValue).to.equal('Tallinn')
     })
 })
