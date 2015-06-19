@@ -5,7 +5,7 @@ describe('when user clicks button', function () {
 
     it('shows welcome text in input', function () {
         var inputValue = document.getElementsByTagName('input')[0].value
-        expect(inputValue).to.equal('Tallinn2')
+        expect(inputValue).to.equal('Tallinn')
     })
 
     it('has welcome text of 7 chars', function () {
