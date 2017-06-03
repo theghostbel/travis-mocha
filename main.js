@@ -1,3 +1,3 @@
 function buttonClicked() {
-    document.getElementsByTagName('input')[0].value = 'Gomel2'
+    document.getElementsByTagName('input')[0].value = 'Minsk'
 }
