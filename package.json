@@ -1,14 +1,17 @@
 {
     "name": "travis-mocha-example",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "repository": {
         "type": "git",
         "url": "https://github.com/theghostbel/solit-travis"
     },
     "dependencies": {
+        "mocha-headless-chrome": "2.0.0",
         "mocha-phantomjs": "3.3.2"
     },
-    "scripts" : {
-        "test" : "mocha-phantomjs index.html"
+    "scripts": {
+        "test:phantom": "mocha-phantomjs index.html",
+        "test:headless": "mocha-headless-chrome --file index.html --reporter spec --args no-sandbox",
+        "test": "npm run test:headless"
     }
 }

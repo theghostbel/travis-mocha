@@ -3,7 +3,7 @@
 <head>
     <title>Super Puper Mocha Test App</title>
     <style type="text/css">body { padding: 30px; } button, input { font-size: 40px; }</style>
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/mocha/1.13.0/mocha.css"/>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/mocha/5.1.1/mocha.css"/>
     <script src="main.js"></script>
 </head>
 <body>
@@ -11,13 +11,13 @@
     <input type="text" value="" />
 
     <div id="mocha"></div>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/mocha/1.13.0/mocha.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/mocha/5.1.1/mocha.js"></script>
     <script>mocha.setup('bdd')</script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/expect.js/0.2.0/expect.js"></script>
     <script src="test-app.js"></script>
 
     <script>
-        if (location.href.indexOf('runTest') !== -1)
+        if (location.href.includes('runTest') || navigator.userAgent.includes('HeadlessChrome'))
             mocha.run()
         if (window.mochaPhantomJS)
             mochaPhantomJS.run()
